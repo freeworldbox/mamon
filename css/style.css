@@ -209,7 +209,6 @@ button {
 /* Services */
 .services {
    padding-top: 100px;
-   padding-bottom: 100px;
 }
 
 .services__inner {
@@ -293,6 +292,7 @@ button {
 
 .team__content {
    margin-left: 35px;
+   line-height: 1.1;
 }
 
 .team__name {
@@ -309,7 +309,7 @@ button {
 }
 
 /* Footer */
-.footer-bg {
+.footer {
    background-color: #F7F7F7;
    padding: 38px 0;
 }
@@ -325,16 +325,35 @@ button {
    align-items: center;
 }
 
-.footer__social img {
+.footer__social a {
    margin-left: 34px;
 }
 
 /* Media */
 @media screen and (max-width: 1199px) {
-
+   /* Intro */
+   .intro__title {
+      font-size: 47px;
+   }
 }
 
 @media screen and (max-width: 991px) {
+   /* Intro */
+   .intro {
+      margin-top: 80px;
+      margin-bottom: 70px;
+   }
+   .intro__title {
+      font-size: 37px;
+   }
+
+   .intro__text {
+      font-size: 22px;
+      max-width: 540px;
+      margin-top: 20px;
+      margin-bottom: 47px;
+   }
+
    /* Services */
    .services__item {
       flex-direction: column;
@@ -358,6 +377,27 @@ button {
 }
 
 @media screen and (max-width: 767px) {
+   /* Header */
+   .header {
+      margin-top: 30px;
+   }
+
+   /* Intro */
+   .intro__title {
+      font-size: 30px;
+   }
+
+   .intro__text {
+      font-size: 18px;
+      max-width: 440px;
+      margin-bottom: 37px;
+   }
+
+   /* Btn */
+   .btn--intro {
+      padding: 14px 30px;
+   }
+
    /* Nav*/
    .nav {
       display: none;
@@ -375,10 +415,11 @@ button {
    /* Team */
    .taem__item {
       flex-direction: column;
+      margin-bottom: 50px;
    }
 
    .team__content {
-      margin-left: 0;
+      margin-left: 20px;
       text-align: center;
    }
 
@@ -386,13 +427,21 @@ button {
 
 @media screen and (max-width: 662px) {
    /* Services */
+   .services {
+      padding-top: 80px;
+   }
+
    .services__item  {
       width: 100%;
    }
 
    /* Clients */
+   .clients {
+      padding-bottom: 70px;
+   }
    .clients__item {
-      width: 50%;
+      width: 100%;
+      margin-bottom: 35px;
    }
 
    /* Team */
@@ -413,7 +462,20 @@ button {
    }
 
    /* Footer */
+   .footer {
+      padding: 20px 0;
+   }
+
    .footer__inner {
       flex-direction: column;
+   }
+
+   .footer__social {
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 20px;
+   }
+   .footer__social a {
+      margin: 0;
    }
 }
